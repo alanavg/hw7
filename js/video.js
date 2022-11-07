@@ -52,7 +52,7 @@ document.querySelector("#mute").addEventListener("click", function() {
 	if (document.querySelector("#mute").innerHTML == "Mute") {
 		console.log("Mute")
 		video.muted = true;
-		video.volume = 0;
+		// video.volume = 0;
 		document.querySelector("#mute").innerHTML= "Unmute"
 		document.querySelector("#volume").innerHTML= video.volume * 100 + "%"
 	}
@@ -60,7 +60,7 @@ document.querySelector("#mute").addEventListener("click", function() {
 		console.log("Unmute")
 		document.querySelector("#mute").innerHTML == "Unmute"
 		video.muted = false;
-		video.volume = 1.0;
+		// video.volume = 1.0;
 		document.querySelector("#mute").innerHTML= "Mute"
 		document.querySelector("#volume").innerHTML= video.volume * 100 + "%"
 	}
