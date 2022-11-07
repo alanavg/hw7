@@ -53,14 +53,14 @@ document.querySelector("#mute").addEventListener("click", function() {
 		console.log("Mute")
 		video.muted = true;
 		document.querySelector("#mute").innerHTML= "Unmute"
-		document.querySelector("#volume").innerHTML= video.volume * 100 + "%"
+		document.querySelector("#volume").innerHTML= "0%"
 	}
 	else {
 		console.log("Unmute")
 		document.querySelector("#mute").innerHTML == "Unmute"
 		video.muted = false;
 		document.querySelector("#mute").innerHTML= "Mute"
-		document.querySelector("#volume").innerHTML= video.volume * 100 + "%"
+		document.querySelector("#volume").innerHTML= "100%"
 	}
 });
 
