@@ -8,7 +8,9 @@ window.addEventListener("load", function() {
 	console.log("Loop is set to " + video.loop);
 });
 
+
 document.querySelector("#play").addEventListener("click", function() {
+	
 	console.log("Play Video");
 	video.play()
 	video.volume = 1.0;
@@ -65,10 +67,11 @@ document.querySelector("#mute").addEventListener("click", function() {
 });
 
 document.querySelector("#slider").addEventListener("change", function(s){
-	console. log("volume changing");
+	console.log("volume changing");
 	video.volume = s.currentTarget.value / 100;
+	console.log(video.volume)
 	document.querySelector("#volume").innerHTML= video.volume * 100 + "%"
-	console.log("Volume is " + video.volume*100)
+	console.log("Volume is " + video.volume*100 + "%")
 });
 
 document.querySelector("#vintage").addEventListener("click", function() {
