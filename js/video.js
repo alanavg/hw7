@@ -66,12 +66,11 @@ document.querySelector("#mute").addEventListener("click", function() {
 	}
 });
 
-document.querySelector("#slider").addEventListener("change", function(s){
+document.querySelector("#slider").addEventListener("click", function(){
 	console.log("volume changing");
-	video.volume = s.currentTarget.value / 100;
-	console.log(video.volume)
-	document.querySelector("#volume").innerHTML= video.volume * 100 + "%"
-	console.log("Volume is " + video.volume*100 + "%")
+	video.volume = this.value / 100;
+	console.log("video volume is " + video.volume)
+	document.querySelector("#volume").innerHTML= video.volume * 100 + "%";
 });
 
 document.querySelector("#vintage").addEventListener("click", function() {
