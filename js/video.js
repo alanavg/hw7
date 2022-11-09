@@ -13,7 +13,7 @@ document.querySelector("#play").addEventListener("click", function() {
 	
 	console.log("Play Video");
 	video.play()
-	video.volume = 1.0;
+	// video.volume = 1.0;
 	document.querySelector("#volume").innerHTML= video.volume * 100 + "%"
 	console.log("Volume is " + video.volume*100)
 });
